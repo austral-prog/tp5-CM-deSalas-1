@@ -5,10 +5,4 @@ def max_of_two(x, y):
         return y
 
 def max_of_three(x, y, z):
-    if x < y and y > z:
-        return y
-    elif y < x and x > z:
-        return x
-    elif x < z and z > y:
-        return z
-
+    return max_of_two(max_of_two(x, y), z)
